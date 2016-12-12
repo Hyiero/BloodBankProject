@@ -3,7 +3,9 @@
  */
 
 import homeTemplate from './home.html';
+import registerTemplate from './register/register.html';
 import homeController from './home.controller';
+import registerController from './register/register.controller';
 
 /* @ngInject */
 export default function homeConfig($stateProvider){
@@ -16,6 +18,11 @@ export default function homeConfig($stateProvider){
                     template: homeTemplate,
                     controller: homeController,
                     controllerAs: 'homeCtrl'
+                },
+                'register@home': {
+                    template: registerTemplate,
+                    controller: registerController,
+                    controllerAs: 'registerCtrl'
                 }
             }
         });

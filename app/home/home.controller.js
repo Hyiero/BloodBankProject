@@ -5,6 +5,7 @@
 export default function homeController(){
     "use strict";
     let controller = this;
+    controller.title = "Blood Bank Management";
 
 
     return controller;
